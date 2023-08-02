@@ -384,7 +384,7 @@ a.full_link{
 	clear: both;
 	background-color: var(--body-background-color);
 	border-bottom: 1px solid rgba(0,0,0,.1);
-	padding: 20px;
+	padding:  20px 0;
 }
 .anor_fn_mobile_menu .mobile_in{
 	width: 100%;
