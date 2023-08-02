@@ -1,0 +1,41 @@
+.disclaimer_container{
+    
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    }
+
+.disclaimer_container_guias_cursos {
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.disclaimer_text_guias_cursos {
+    font-family: "Lato";
+    color: #617497;
+    max-width: 854px;
+    width: 854px;
+    margin: auto;
+}
+
+.disclaimer_text {
+    font-family: "Lato";
+    color: #617497;
+    width: 700px;
+    max-width: 100%;
+}
+
+.disclaimer_hr {
+    height: 1px;
+    width: 100%;
+    max-width: 854px;
+    color: #617497;
+    opacity: 0.1;
+    margin: auto;
+    
+}

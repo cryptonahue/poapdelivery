@@ -1,0 +1,337 @@
+/* Comunidad links */
+.Container__Community img {
+  cursor: pointer;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.Container__Community {
+  display: flex;
+  justify-content: center;
+}
+
+.grup_title h1{
+  font-size: 2.2rem;
+}
+
+.grup_title hr{
+  height: 5px;
+}
+
+.Community__items {
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+
+.Community__items svg {
+  margin: auto;
+}
+
+.Community__items h3 {
+  padding-top: 5px;
+}
+/* fin comunidad links */
+
+/* botones */
+
+.boton_container_home {
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.boton_container_rekts_proyectos {
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.boton_container_rekts_proyectos button:hover{
+  opacity: .8;
+  color: #0D1527!important;
+ }
+
+.boton_container_rekts_proyectos button{
+  background-color: #EBCE6E!important;
+  color: #0D1527!important;
+ }
+
+.boton_container_home button{
+ background-color: #EBCE6E!important;
+ color: #0D1527!important;
+}
+.NavBar__items button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.NavBar__items button:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #b89f57;
+  transition: width .5s ease 0s,left .5s ease 0s;
+  width: 0;
+}
+.center-home{
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -24px;
+  width: calc(100% + 24px);
+  justify-content: center;
+}
+.invitacion-comunidad-p p{
+ text-align: center;
+}
+.boton_container_home button:hover{
+  opacity: .8;
+  color: #0D1527!important;
+ }
+@media (max-width: 1170px){
+  .proyect{
+    display: grid !important;
+    justify-content: center !important;
+  }
+  .proyect .center-home3{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .proyect-conteiner-div{
+    justify-content: center;
+  }
+}
+/* botones */
+.center-home3{
+  max-width: 388px;
+}
+
+.ItemPost__image img { border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; -o-border-radius: 10px 10px 0 0;
+}
+
+.ItemPost__user-cont {
+  display: flex;
+  align-items: center;
+}
+
+.ItemPost__user-info {
+  margin-left: 1rem;
+}
+
+.ItemPost__categoria {
+background-color: #13233A;
+padding: 5px 15px 5px 15px;
+border-radius: 5px;
+font-size: 10px;
+color: #54A5FE;
+text-align: center;
+max-width: 90px;
+}
+
+.mySwiper1 {
+  display: grid;
+  justify-content: center;
+}
+/*REDES*/
+.contenedor_redes{
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0E162B;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contenedor_redes_izquierda{
+  display: block;
+  height: max-content;
+  width: 580px;
+  background-color: #282828;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contenedor_spotify_derecha{
+  align-items: flex-end;
+  height: auto;
+  width: 580px;
+  margin: auto;
+}
+.ifram1{
+  margin: 10px;
+}
+.contenedor_twitter1{
+  display: flex;
+  margin: auto;
+}
+.boton-spoti{
+  display: flex;
+  margin: auto;
+}
+.icon-spoti{
+  margin: auto;
+}
+.boton-spoti1{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.BotonRedesSpotify{
+  display: flex;
+  background-color: #05ae05;
+  width: 200px;
+  margin: auto;
+}
+
+.Nav_list__1IxHB button {
+  margin-left: 10px;
+  margin-right: 10px;
+  /* min-width: 0px !important; */
+  padding: 0px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.contenedor_twitter{
+  display: block;
+  height: 225px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.dentroboton{
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor_instagram{
+  height: 225px;
+  margin: auto;
+}
+.mySwiper3{
+  display: flex;
+  justify-content: space-between;
+}
+.css-18dqjbq{
+  border-radius: 10px !important;
+  background-color: #0D1527 !important;
+  background-image: linear-gradient(#0D1527, #0D1527) !important;
+}
+
+
+.subtitle1 {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 0px 0px 0px;
+  overflow:hidden; 
+   text-overflow:ellipsis;
+   display:-webkit-box; 
+   -webkit-box-orient:vertical;
+   -webkit-line-clamp:2;
+   height:72px;
+}
+
+.descripcion {
+  font-family: "Lato";
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px 0px 10px 0px;
+  height: 100px;
+  overflow:hidden; 
+   text-overflow:ellipsis;
+   display:-webkit-box; 
+   -webkit-box-orient:vertical;
+   -webkit-line-clamp:3;
+   margin-bottom: 10px;
+}
+
+
+.redes_Container {
+  display: flex;
+  justify-content: space-between;
+  margin-top:25px;
+}
+
+.redes_Youtube {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  justify-content: center;
+  grid-gap: 20px; */
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0E162B;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.redes_Youtube div{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  justify-content: center;
+  grid-gap: 20px; */
+ padding: 5px;
+
+}
+
+
+
+.redes_Box1 {
+
+  width: auto;
+
+}
+
+.embed-ltr-1ze1ed {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #05ae05;
+  z-index: 0;
+  transition: transform 400ms;
+}
+
+
+/* ItemPost__user-cont
+ItemPost__user-image
+ItemPost__user-info */
+@media (max-width: 990px){
+  .redes_Youtube{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 835px){
+  .redes_Youtube{
+    width: 320px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 550px) { 
+  .Container__Community { /* comunidad links */
+    width: 300px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,115 @@
+header {
+  background-color: #0c0e1a;
+  color: #f9f9f9;
+  padding: 15px 60px;
+}
+
+.NavBar__buttons div svg {
+
+  width: 1.5em;
+  height: 1.5em;
+}
+.header__Container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NavBar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar__menu-movil {
+  display: none;
+}
+
+.NavBar__items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.NavBar__logo img {
+  padding-right: 24px;
+}
+
+@media (max-width: 1200px) {
+  .NavBar__items {
+    display: none;
+  }
+}
+
+@media (max-width: 1095px) {
+  .NavBar__menu-movil {
+    display: block;
+  }
+
+  header {
+    padding: 15px 5vw 15px 5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .NavBar__buttons {
+    display: block;
+  }
+
+  .NavBar__menu-movil {
+    display: none;
+  }
+
+  .NavBar__items {
+    display: block;
+  }
+
+}
+
+@media (min-width: 280px) and (max-width: 1023px)
+{
+
+  .NavBar__buttons {
+    display: none;
+  }
+
+.NavBar__container {
+  min-width:300px;
+}
+
+  header {
+    padding: 15px 5vw 15px 5vw;
+  }
+
+  .NavBar__logo img {
+    padding-right: 0px;
+  }
+
+  .navbar-burger {
+    margin-right: 1rem;
+  }
+
+  .NavBar__container {
+    justify-content: space-between;
+  }
+}
+
+.AvatarContainerLogin {
+
+}
+
+
+.UserName {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.UserEmail {
+  text-align: left;
+margin-left: 10px;
+
+}
+
+
+
+

@@ -1,0 +1,385 @@
+.left_box_opiniones {
+  display: "flex";
+  align-items: "center";
+  grid-gap: "0 10px";
+}
+
+.left_box_opiniones_block {
+  display: none;
+  align-items: center;
+  grid-gap: 0 10px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .anor_fn_searchpanel .search_right {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left_box_opiniones {
+    display: none;
+    align-items: center;
+    grid-gap: 0 10px;
+  }
+
+  .left_box_opiniones_block {
+    display: flex;
+    align-items: center;
+    grid-gap: 0 10px;
+  }
+}
+
+.buton-aling-end {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.opinion___image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opiniones_box {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opiniones_fecha {
+  color: #54a5fe;
+}
+
+/* .opiniones_rating {
+
+} */
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.fn_title a {
+  color: #f2f2f2;
+}
+
+.fn_title a :hover {
+  color: #b89f57;
+}
+
+/*------------------------------------------------------------------*/
+/*	53) Similar: List
+/*------------------------------------------------------------------*/
+.anor_fn_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  justify-content: center;
+}
+.anor_fn_list > li {
+  width: 33.3333%;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.anor_fn_list[data-cols="5"] > li {
+  width: 20%;
+}
+.anor_fn_list[data-cols="4"] > li {
+  width: 25%;
+}
+.anor_fn_list[data-cols="2"] > li {
+  width: 50%;
+}
+.anor_fn_list[data-cols="1"] > li {
+  width: 100%;
+}
+
+.anor_fn_list[data-gap="50"] {
+  margin-left: -50px;
+}
+.anor_fn_list[data-gap="50"] > li {
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+.anor_fn_list[data-gap="45"] {
+  margin-left: -45px;
+}
+.anor_fn_list[data-gap="45"] > li {
+  padding-left: 45px;
+  margin-bottom: 45px;
+}
+
+.anor_fn_list[data-gap="40"] {
+  margin-left: -40px;
+}
+.anor_fn_list[data-gap="40"] > li {
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.anor_fn_list[data-gap="35"] {
+  margin-left: -35px;
+}
+.anor_fn_list[data-gap="35"] > li {
+  padding-left: 35px;
+  margin-bottom: 35px;
+}
+
+.anor_fn_list[data-gap="30"] {
+  margin-left: -30px;
+}
+.anor_fn_list[data-gap="30"] > li {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.anor_fn_list[data-gap="25"] {
+  margin-left: -25px;
+}
+.anor_fn_list[data-gap="25"] > li {
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.anor_fn_list[data-gap="20"] {
+  margin-left: -20px;
+}
+.anor_fn_list[data-gap="20"] > li {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.anor_fn_list[data-gap="15"] {
+  margin-left: -15px;
+}
+.anor_fn_list[data-gap="15"] > li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.anor_fn_list[data-gap="10"] {
+  margin-left: -10px;
+}
+.anor_fn_list[data-gap="10"] > li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.anor_fn_list[data-gap="5"] {
+  margin-left: -5px;
+}
+.anor_fn_list[data-gap="5"] > li {
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.anor_fn_list[data-gap="0"] {
+  margin-left: 0px;
+}
+.anor_fn_list[data-gap="0"] > li {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.anor_fn_list[data-vspace="50"] > li {
+  margin-bottom: 50px;
+}
+.anor_fn_list[data-vspace="45"] > li {
+  margin-bottom: 45px;
+}
+.anor_fn_list[data-vspace="40"] > li {
+  margin-bottom: 40px;
+}
+.anor_fn_list[data-vspace="35"] > li {
+  margin-bottom: 35px;
+}
+.anor_fn_list[data-vspace="30"] > li {
+  margin-bottom: 30px;
+}
+.anor_fn_list[data-vspace="25"] > li {
+  margin-bottom: 25px;
+}
+.anor_fn_list[data-vspace="20"] > li {
+  margin-bottom: 20px;
+}
+.anor_fn_list[data-vspace="15"] > li {
+  margin-bottom: 15px;
+}
+.anor_fn_list[data-vspace="10"] > li {
+  margin-bottom: 10px;
+}
+.anor_fn_list[data-vspace="5"] > li {
+  margin-bottom: 5px;
+}
+.anor_fn_list[data-vspace="0"] > li {
+  margin-bottom: 0px;
+}
+
+/*------------------------------------------------------------------*/
+/*	54) Trader Item
+/*------------------------------------------------------------------*/
+.fn__trader_item {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  /*     width: 250px; */
+  cursor: pointer;
+}
+.fn__trader_item:hover {
+  border-color: var(--main-color);
+  transform: translateY(-5px) translateZ(0);
+}
+.fn__trader_item .trader_top {
+  position: relative;
+  padding: 38px 20px 26px;
+  text-align: center;
+}
+.fn__trader_item .trader_top .fn_title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.fn__trader_item .author_img {
+  position: relative;
+  max-width: 180px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.fn__trader_item .author_img img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 20%);
+}
+.fn__trader_item .author_img .icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--main-color);
+  bottom: 2.5%;
+  right: 12.5%;
+  color: #fff;
+  z-index: 6;
+}
+.fn__trader_item .author_img .icon .fn__svg {
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+}
+.fn__trader_item .trader_bottom {
+  border-top: 2px solid #ddd;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* .fn__trader_item .bottom_left{
+    width: 80%;
+	padding: 17px 20px 14px;
+	 border-right: 1px solid #ddd; 
+}
+.fn__trader_item .bottom_right{
+	width: 20%; 
+	padding: 15px 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+ 	border-left: 1px solid #ddd; 
+}
+ */
+
+.fn__trader_item .bottom_left {
+  width: 60%;
+  padding: 17px 20px 14px;
+  border-right: 1px solid #ddd;
+}
+.fn__trader_item .bottom_right {
+  width: 40%;
+  padding: 15px 20px;
+  border-left: 1px solid #ddd;
+}
+
+.fn_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fn_desc img {
+  padding-bottom: 0px;
+}
+
+.fn__trader_item .trader_bottom .fn_desc {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.fn__trader_item .trader_bottom .fn_title {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#auction {
+  padding: 50px 0 90px;
+}
+#collection {
+  padding: 100px 0;
+}
+.anor_fn_slider_holder .fn__collection_item {
+  margin-bottom: 73px;
+}
+#category {
+  padding: 90px 0;
+}
+.anor_fn_category_slider .fn__category_item {
+  margin-bottom: 73px;
+}
+#artist {
+  padding: 100px 0;
+}
+.anor_fn_artist_slider .fn__artist_item {
+  margin-bottom: 73px;
+}

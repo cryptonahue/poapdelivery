@@ -1,0 +1,93 @@
+/* .Members_Container {
+    width: 720px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-gap: 30px 30px;
+    grid-template-rows: repeat(10rem, 1fr);
+    margin-top: 50px;
+    justify-content: center;
+   
+} */
+
+.Members_Container {
+  width: 720px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 30px 30px;
+  grid-template-rows: repeat(10rem, 1fr);
+  margin-top: 50px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.Members_Info {
+  display: grid;
+}
+
+.Members_Info img {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.Members_Info img:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transform: translateY(-5%);
+  }
+
+.Twitter_Username {
+  display: flex;
+  color: #4384cd;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.Twitter_Username :hover{
+    /* font-weight: 600; */
+    color: #b89f57;
+  }
+
+
+.Members_Rol {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Center_Container {
+  display: flex;
+  justify-content: center;
+}
+
+.member-team {
+  border: solid 4px;
+  border-color: #dec764;
+  opacity: 0.8;
+}
+
+.member-team:hover {
+  border: solid 4px;
+  border-color: #dec764;
+  opacity: 1;
+}
+
+.member-hardcore {
+  border: solid 4px;
+  border-color: #dec86488;
+  opacity: 0.7;
+}
+
+.member-hardcore:hover {
+  border: solid 4px;
+  border-color: #dec86488;
+  opacity: 1;
+}
+

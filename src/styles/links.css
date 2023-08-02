@@ -1,0 +1,29 @@
+/*.Links {
+	display: flex;
+	align-items: center;
+}
+*/
+
+.Links-list{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 0 25px;
+	flex-wrap: wrap;
+}
+.css-142s27y:hover{
+	background-color: #b89f57 !important;
+}
+
+/*.Links-circle{
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+.Links-item{
+	display: flex;
+	align-items: center;
+	grid-gap: 0 15px;
+}*/

@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./navbar/navbar.css");
+@import url("./links/links.css");
+@import url("./definiciones.css");
+@import url("./filter.css");
+@import url("./events.css");
+@import url("./proyect.css");
+@import url("./slider/slide.css");
+@import url("./nosotros/nosotros.css");
+@import url("./cards/home.css");
+@import url("./footer/footer.css");
+@import url("./modal/modal.css");
+@import url("./markdown/markdown.css");
+@import url("./cursos.css");
+@import url("./disclaimer.css");
+@import url("./model/index.css");
+@import url("./herramientas.css");
+@import url("./404.css");
+@import url("./separadores.css");
+
+body {
+  font-family: "Lato";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f9f9f9;
+  line-height: 1.17;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* .blog-form {
+  margin-top: -60px;
+} */
+
+select:focus {
+  outline: none;
+}
+.input-coment input {
+  padding-left: 20px;
+}
+.div-hr-coments hr {
+  margin-bottom: 20px;
+}
+.body-coments p {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.Comment_container-avatar {
+  display: flex;
+  align-items: center;
+  grid-gap: 0 10px;
+}
+.boton-compartir1 button {
+  width: 150px;
+  border-radius: 10px;
+  color: #0d1527;
+  background-color: #f9f9f9;
+}
+
+.boton-compartir1 {
+  display: grid;
+  justify-content: right;
+}
+
+img {
+  border-radius: 10px;
+}
+
+li,
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.Post__user-info_username_space img {
+  max-width: 40px;
+}
+
+@media (max-width: 425px) {
+  .header-definiciones {
+    display: none !important;
+  }
+}
+
+.Nav_list__1IxHB button {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 0px !important;
+  padding: 0px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  -webkit-transition: background-size 0.3s;
+  -moz-transition: background-size 0.3s;
+  -ms-transition: background-size 0.3s;
+  -o-transition: background-size 0.3s;
+}
+.Nav_list__1IxHB button:hover {
+  background-color: #0c0e1a;
+  background-size: 100% 2px;
+}
+button {
+  text-transform: initial !important;
+  font-size: 1rem !important;
+}
+a {
+  text-transform: initial !important;
+}
+.Container_Definitions-search button {
+  margin-left: 10px;
+}
+.clock_evento {
+  margin-right: 5px;
+}
+.boton-google {
+  margin-top: 10px !important;
+  background-color: #0e162b !important;
+}
+.boton-google:hover {
+  background-color: #314883 !important;
+}
+
+.input,
+.select {
+  padding: 10px;
+  background-color: #161c27;
+  color: #f9f9f9;
+  font-size: 1rem !important;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom_Dropzone {
+  padding: 20px 12px;
+  background-color: #161c27;
+  color: #607d8b;
+  border: 1px dashed #607d8b;
+  border-radius: 5px;
+}
+
+
+.Community::-webkit-scrollbar {
+  width: 20px;
+}
+.noticias-bot {
+  min-width: 50px !important;
+  max-width: 150px !important;
+}
+.Community::-webkit-scrollbar-track {
+  background-color: #0c0e1a;
+  border-radius: 0px;
+}
+
+.Community::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #f9f9f9;
+}
+
+.Button {
+  color: #f2f2f2;
+  background-color: #ebce6e;
+}
+
+@import url("./theme/herramientas.css");
+@import url("./theme/base.css");
+@import url("./theme/opiniones.css");
+@import url("./theme/responsive.css");
+@import url("./theme/filtro.css");
+ @import url("./theme/header.css"); 
+@import url("./theme/dark.css");
+
+@import url("./theme/flickity.css");
+/* @import url("./theme/fontello.css"); */
+
+@import url("./theme/select2.css");
+@import url("./theme/tippy.css");
+
+@import url("./theme/completo.css");
+@import url("./theme/hamburguermenu.css"); 
+ @import url("./theme/hamburger.css");
+ @import url("./links/links-page.css");
+
+ @layer base {
+  @font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: url("/fonts/Lato-Regular.woff") format("woff"),
+      url("/fonts/Lato-Bold.woff") format("woff"),
+      url("/fonts/Lato-Light.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "RobotoMono";
+    src: url("/fonts/RobotoMono-Regular.woff") format("woff"),
+      url("/fonts/RobotoMono-Bold.woff") format("woff"),
+      url("/fonts/RobotoMono-Light.woff") format("woff");
+  }
+} 
+
+@import url("./poap.css");
+
+

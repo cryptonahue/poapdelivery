@@ -1,0 +1,130 @@
+/*Modal*/
+.Modal__container {
+  min-width: 360px;
+  padding: 25px 20px;
+  background-color: #0c0e1a;
+  /*border-radius: 10px;*/
+  color: #fff;
+}
+
+.css-1latus7-MuiPaper-root-MuiDialog-paper {
+  background-color: #0c0e1a;
+  border-radius: 10px;
+}
+
+.css-5s2tvt-MuiPaper-root-MuiDialog-paper {
+  background-img: none !important;
+}
+
+
+.logo_img_modal img {
+  margin: 10px;
+  padding: 10px;
+}
+/*input {
+  border: none!important;
+  outline: none!important;
+  padding: 10px 15px!important ;
+  height: 40px!important;
+  width: 100% !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  color: #0c0e1a!important;
+}*/
+
+.register_account {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.register_account button:hover{
+  background: none !important;
+}
+
+.register_account:hover {
+    color: #EBCE6E;
+}
+
+.Register__input {
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.links_modal_registro {
+  display:flex;
+  justify-content:center;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.links_modal_registro:hover {
+
+  color: #EBCE6E;
+}
+
+.links_modal {
+        display:flex;
+        justify-content:center;
+        color: #f9f9f9;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 600;
+}
+
+.links_modal:hover {
+
+    color: #EBCE6E;
+}
+
+
+.boton_home {
+  color: #0D1527 !important;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: initial;
+  }
+  .css-10hm2e3{
+    margin-top: 10px !important;
+  }
+ /* .boton_home1:hover{
+    background-color: #DEC764!important;
+  }
+  .boton_home1 {
+    margin-top: 10px;
+    color: #0D1527;
+    background-color: #b89f57 !important;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: initial;
+    }
+
+  .boton_home2 {
+    color: #f9f9f9;
+    background-color: #0E1326!important;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: initial;
+  }
+
+  .boton_home2:hover {
+    color: #f9f9f9;
+    background-color: #13233A!important;
+  }
+  */
+
+@media (max-width: 600px) {
+  .Modal__container {
+    min-width: 100%;
+  }
+}

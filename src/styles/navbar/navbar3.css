@@ -1,0 +1,78 @@
+/*NavBar*/
+.NavBar__container {
+	max-width:1200px;
+}
+
+.NavBar__container2 {
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.NavBar__buttons {
+	display: flex;
+}
+
+.NavBar__items {
+    display: flex;
+    align-items: center;
+	text-align: center;
+}
+
+.NavBar__logo img {
+	padding-right: 24px;
+}
+.NavBar__menu-movil {
+	display: none;
+}
+
+
+@media (max-width: 1200px) {
+
+    .NavBar__items {
+		display: none;
+	}
+}
+
+.NavBar__buttons {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+
+.NavBar__buttons {
+  display: none;
+    }
+}
+
+@media (max-width: 1095px) {
+	.NavBar__menu-movil {
+		display: block;
+	}
+}
+
+
+@media (max-width: 780px) {
+	.NavBar__buttons {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.NavBar__container {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 540px){
+.navbar-burger {
+	margin-right: 1rem;
+}}
+
+
+@media (max-width:320px) {
+    .NavBar__logo img {
+    padding-right: 24px;
+}
+}

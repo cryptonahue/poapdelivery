@@ -1,0 +1,263 @@
+.li_tutoriales {
+  list-style-type: disc;
+  margin-left: 10px;
+}
+
+.Event_subtitle2 {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 0px 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 72px;
+  }
+
+
+
+.titulo-cursos h1{
+  font-size: 2.9rem;
+    text-align: left;
+    word-break: break-word;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+  .ite2 {
+    align-items: center;
+    min-height: 30px;
+    max-height: 30px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    background-color: #13233A;
+    color: #f9f9f9;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0 10px 0 0px;
+  }
+  .Modal__container .input{
+    width: 100%;
+  }
+  .ite2 span {
+    color: #54A5FE;
+  }
+  .cont-curso{
+    margin-bottom: 10px;
+  }
+  .contenedor-cursos{
+    display: "flex";
+    justify-Content: "space-between";
+    max-width: 850px;
+    margin: auto;
+  }
+  .youtube-video iframe{
+    width: 100%;
+  }
+  .video-curso-intro iframe{
+    width: 100%;
+  }
+  .titulo-cursos{
+    margin-bottom: 5px;
+  }
+
+  .boton-comenzar-curso{
+    background-color: #EBCE6E !important;
+    color: #24294C !important;
+  }
+
+  .espacio-arriba {
+    margin-top: 10px;
+  }
+  .contenido-curso{
+    background-color: #0E162B;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .contenido-curso span{
+    color: #EBCE6E;
+  }
+  .cont-curso p{
+    color: #617497;
+    font-size: 1.25rem;
+  }
+  #lista3 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    padding: 0 5px;
+    text-shadow: 0 0px 0 rgba(255,255,255,.5);
+}
+
+.ItemEvent__container {
+  margin-right: 20px;
+}
+
+.ItemEvent__container {
+  margin-top: 20px;
+  max-width: 384px;
+}
+
+#lista3 ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista3 li{
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    margin: 0.5em 0 1em 2.5em;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+  
+
+#lista3 li:before{
+    content: "";
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -0.5em;
+    background: #EBCE6E;
+    height: 1em;
+    width: 1em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.contenedor-cursos h4{
+  margin-top: 10px;
+}
+.download-cursos{
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.boton-comenzar-curso:disabled{
+  color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+.botones-sig{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#lista3 li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+#lista3 li:hover:after{
+    left: -.5em;
+    border-left-color: #EBCE6E;             
+}
+
+#contenedor-profesor {
+  grid-area: contenedor-profesor;
+ 
+}
+#contenedor-profesor-imagen {
+  grid-area: contenedor-profesor-imagen;
+  
+}
+#contenedor-profesor-datos {
+  grid-area: contenedor-profesor-datos;
+
+}
+.cont-prof-img img{
+  border-radius: 50%;
+}
+.cont-prof-inf{
+  margin-left: 20px;
+}
+#cont-prof-nombre {
+  grid-area: cont-prof-nombre;
+  
+}
+#cont-prof-img {
+  grid-area: cont-prof-img;
+  
+}
+#cont-prof-inf {
+  grid-area: cont-prof-inf;
+
+}
+#cont-prof-descripcion {
+  grid-area: cont-prof-descripcion;
+ 
+}
+#nombre-prof {
+  grid-area: nombre-prof;
+}
+#nombre-rol {
+  grid-area: nombre-rol;
+}
+#nombre-tel {
+  grid-area: nombre-tel;
+}
+#nombre-redes {
+  grid-area: nombre-redes;
+}
+.contenedor-profesor {
+  display: grid !important;
+  max-width: 100%;
+  grid-template-areas:
+  "contenedor-profesor-imagen contenedor-profesor-datos"
+  "contenedor-profesor-imagen contenedor-profesor-datos";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+}
+.contenedor-profesor-imagen {
+  display: grid !important;
+  width: 100%;
+  grid-template-areas:
+  "cont-prof-nombre cont-prof-nombre"
+  "cont-prof-img cont-prof-inf"
+  "cont-prof-descripcion cont-prof-descripcion";
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.cont-prof-inf {
+  display: grid !important;
+  align-items: center;
+  grid-template-areas:
+  "nombre-prof"
+  "nombre-rol"
+  "nombre-tel"
+  "nombre-redes";
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr;
+}
+.cont-prof-inf{
+  display: grid;
+  height: 200px;
+  align-self: center;
+}
+.cont-prof-descripcion{
+  padding: 20px;
+}
+.cont-prof-nombre{
+  display: grid;
+  align-items: center;
+}
+.cont-prof-nombre span{
+  padding-left: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+
+}
+.contenedor-profesor-cursos{
+  max-width: 850px;
+  margin: auto;
+}
