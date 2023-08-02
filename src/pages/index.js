@@ -136,18 +136,13 @@ const Poap = ({ communities }) => {
           <div className="poap">
             <Spacing space="10" />
             <div className="poap-titulo">
-              <Typography variant="h4">Recibí tú</Typography>
-              <img
-                alt="DeFi LATAM POAP"
-                height="auto"
-                width="100px"
-                src="/img/poap.svg"
-              />
+              <Typography variant="h4">Claim POAP</Typography>
+              
               {/*{ip}*/}
             </div>
             <Spacing space="10" />
             <Typography variant="body1" className="body2 poap-titulo">
-              Completa el siguiente formulario para obtener el POAP del evento.
+            Insert secret key word
             </Typography>
             <br />
             <br />
@@ -160,7 +155,7 @@ const Poap = ({ communities }) => {
                     <Input
                       type="text"
                       name="keyword"
-                      placeholder="Escribe la palabra secreta"
+                      placeholder="Enter the secret word"
                       {...register("keyword")}
                       variant="outlined"
                       fullWidth
@@ -173,7 +168,7 @@ const Poap = ({ communities }) => {
                     className="boton-reclamar"
                     disabled={isSubmitting && "true"}
                   >
-                    RECLAMAR
+                    CLAIM
                   </Button>
                 </div>
                 <br />

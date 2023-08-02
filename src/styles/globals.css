@@ -22,7 +22,11 @@
 @import url("./separadores.css");
 
 body {
-  font-family: "Lato";
+  font-family: "Rubik";
+}
+
+p {
+  font-family: "Rubik";
 }
 
 h1,
@@ -214,12 +218,14 @@ a {
     src: url("/fonts/Roboto-Bold.woff") format("woff");
   }
 
+
+  
   @font-face {
     font-display: swap;
-    font-family: "Lato";
-    src: url("/fonts/Lato-Regular.woff") format("woff"),
-      url("/fonts/Lato-Bold.woff") format("woff"),
-      url("/fonts/Lato-Light.woff") format("woff");
+    font-family: "Rubik";
+    src: url("/fonts/Rubik-SemiBold.woff") format("woff"),
+      url("/fonts/Rubik-Regular.woff") format("woff"),
+      url("/fonts/Rubik-Medium.woff") format("woff");
   }
 
   @font-face {

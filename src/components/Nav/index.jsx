@@ -80,79 +80,15 @@ const NavBar = () => {
               <div className="fn_logo">
                 <Link href="/">
                   <a>
-                    <img
-                      src="/img/logo.svg"
-                      alt=""
-                      width="200px"
-                      height="auto"
-                    ></img>
+                    <div><img
+                        src="/img/logo.svg"
+                        alt=""
+                        width="40px"
+                        height="auto"
+                      ></img></div><div> POAPDelivery.xyz</div>
                   </a>
                 </Link>
               </div>
-              
-            {/*   <div className="nav_list">
-                <ul className="main_menu">
-                  <li className="menu-item-has-children cursos_pointer">
-                    <a href="#">Academia</a>
-                    <img src="/svg/down.svg" alt="" className="fn__svg"></img>
-                    <ul className="sub-menu">
-                      <li>
-                        <Link href="/blog">
-                          <a>Artículos</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/definiciones">
-                          <a>DeFiniciones</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/herramientas">
-                          <a>Herramientas</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/tutoriales">
-                          <a>Tutoriales</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link href="/proyectos">
-                      <a>Proyectos</a>
-                    </Link>
-                    <ul className="sub-menu">
-                    <li>
-                    <Link href="/noticias">
-                      <a>Noticias</a>
-                    </Link>
-                  </li>
-                      <li>
-                        <Link href="/rekts">
-                          <a>Rekts</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/opiniones">
-                          <a>Opiniones</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  
-
-           
-
-                  <li className="menu-item-has-children">
-                    <Link href="/gobernanzas">
-                      <a>Gobernanzas</a>
-                    </Link>
-                   
-                  </li>
-
-                </ul>
-              </div> */}
             </div>
 
             <div className="header_right">
@@ -161,18 +97,7 @@ const NavBar = () => {
                 <input type="submit" value="" />
                 <img src="/svg/search.svg" alt="" className="fn__svg"></img>
               </div>
-              {/* <div>
-                <Link href="/poap">
-                  <a className="link_poap">
-                    <img
-                      src="/img/poap.svg"
-                      width="46px"
-                      height="46px"
-                      alt="Reclama tu poap"
-                    ></img>
-                  </a>
-                </Link>
-              </div> */}
+
               <div className="fn_signin">
                 {user ? (
                   <>
@@ -238,12 +163,12 @@ const NavBar = () => {
             <div className="logo">
               <Link href="/">
                 <a>
-                  <img
-                    src="/img/logo.svg"
-                    width="200px"
-                    height="auto"
-                    alt="Reclama tu poap"
-                  ></img>
+                <div><img
+                        src="/img/logo.svg"
+                        alt=""
+                        width="40px"
+                        height="auto"
+                      ></img></div><div> POAPDelivery.xyz</div>
                 </a>
               </Link>
             </div>
@@ -281,94 +206,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/*  <header className={styles.container}>
-        <div>
-          <Link href="/">
-            <img
-              alt="Defi LATAM"
-              src="/img/logo3.svg"
-              width="200px"
-              height="auto"
-            />
-          </Link>
-        </div>
-        <div className={styles.list}>
-          {list.map((item) => (
-            <Fragment key={item.text}>
-              {item.target ? (
-                <a component="a" href={item.to} variant="text" color="inherit">
-                  {item.text}
-                </a>
-              ) : (
-                <Link href={item.to}>
-                  <Button variant="text" color="inherit">
-                    {item.text}
-                  </Button>
-                </Link>
-              )}
-            </Fragment>
-          ))}
-        </div>
-        <div className={styles.btn_movil_hidden}>
-          {user ? (
-            <>
-              <ButtonBase
-                aria-controls="simple-menu"
-                aria-haspopup="true"
-                className="Profile__container"
-                onClick={handleClick}
-              >
-                <span>
-                  <Avatar
-                    sx={{ width: 40, height: 40 }}
-                    alt={user.displayName}
-                    width="50px"
-                    height="50px"
-                    src={user && user.photoURL}
-                  />
-                </span>
-              </ButtonBase>
-            </>
-          ) : (
-            <>
-              <div>
-                <Button
-                  onClick={() => handleModal("signin", true)}
-                  color="inherit"
-                >
-                  <AccountCircleIcon fontSize="large" />
-                </Button>
-              </div>
-            </>
-          )}
-        </div>
-        <div className={styles.btn_desktop_hidden}>
-          <IconButton
-            onClick={() => setOpen(true)}
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        
-      </header>  */}
-
       <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
         <div className="header-main-burger">
           <div>
@@ -381,7 +218,7 @@ const NavBar = () => {
                   height="auto"
                 />
               </div>
-              {/*<div>Defi LATAM</div>*/}
+
               <div>
                 <IconButton
                   className="Menu_Button"
@@ -408,61 +245,6 @@ const NavBar = () => {
               <input type="checkbox" id="drop" />
 
               <ul>
-                {/* <li>  <Link href="/poap">
-                <a className="link_poap_mobile">
-                  <img
-                    src="/img/poap.svg"
-                    width="46px"
-                    height="46px"
-                    alt="Reclama tu poap"
-                  ></img>POAP
-                </a></Link></li> */}
-                {/*  <li>
-                        <Link href="/">
-                          <a>Inicio</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/proyectos">
-                          <a>Proyectos</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/tutoriales">
-                          <a>Tutoriales</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/rekts">
-                          <a>Rekts</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/opiniones">
-                          <a>Opiniones</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/articulos">
-                          <a>Articulos</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/tutoriales">
-                          <a>Tutoriales</a>
-                        </Link>
-                      </li>
-                     
-                      <li>
-                        <Link href="/herramientas">
-                          <a>Herramientas</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/definiciones">
-                          <a>DeFiniciones</a>
-                        </Link>
-                      </li> */}
                 <li>
                   <label for="drop-1" className="toggle">
                     Academia
@@ -519,10 +301,10 @@ const NavBar = () => {
                       </Link>
                     </li>
                     <li>
-                  <Link href="/noticias">
-                    <a>Noticias</a>
-                  </Link>
-                </li>
+                      <Link href="/noticias">
+                        <a>Noticias</a>
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -532,18 +314,6 @@ const NavBar = () => {
                 </li>
               </ul>
             </nav>
-            {/* <List
-              className={classes.sidebarList}
-              onClick={() => setOpen(false)}
-            >
-              {list.map((item) => (
-                <Link key={item.text} href={item.to}>
-                  <ListItem button>
-                    <ListItemText primary={item.text} />
-                  </ListItem>
-                </Link>
-              ))}
-            </List> */}
           </div>
           <div style={{ padding: "10px" }}>
             {user && (

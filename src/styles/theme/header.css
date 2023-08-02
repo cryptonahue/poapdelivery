@@ -99,10 +99,25 @@ a.full_link{
 	margin-right: 50px;
 }
 .anor_fn_header .fn_logo{
-	margin-right: 50px;
+	width: 300px;
+	display: flex;
+
 }
+
+.anor_fn_header .fn_logo div{
+	padding-right: 20px;
+	font-size: 16px;
+	align-self: center;
+	font-weight: 700;
+}
+
+.anor_fn_header .logo_container {
+	display: flex;
+
+}
+
 .anor_fn_header .fn_logo a{
-	display: block;
+	display: flex;
 	text-decoration: none;
 }
 .anor_fn_header .main_menu{
@@ -169,7 +184,7 @@ a.full_link{
 	width: 240px;
 	padding: 24px 0px 22px;
 	border-radius: 10px;
-	background-color: #0C0E1A;
+	background-color: #2F2A47;
 	border: 1px solid #ddd;
 	box-shadow: 0px 5px 30px rgba(0,0,0,0.2);
 	left: -30px;
@@ -380,6 +395,23 @@ a.full_link{
 	align-items: center;
 	justify-content: space-between;
 }
+
+.anor_fn_mobile_menu .mobile_in .logo a{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	padding-right: 20px;
+}
+
+
+.anor_fn_mobile_menu .mobile_in .logo a div{
+	padding-right: 20px;
+}
+
+
+
 .anor_fn_mobile_menu .mobile_in .logo img{
 	max-height: 45.15px;
 }
