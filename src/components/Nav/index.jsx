@@ -211,12 +211,7 @@ const NavBar = () => {
           <div>
             <div className="header-burger">
               <div>
-                <img
-                  alt="Logo DeFi LATAM"
-                  src="/img/logo.svg"
-                  width="150px"
-                  height="auto"
-                />
+                
               </div>
 
               <div>
@@ -229,17 +224,7 @@ const NavBar = () => {
                 </IconButton>
               </div>
             </div>
-            <Link href="/poap">
-              <a className="link_poap_mobile">
-                <img
-                  src="/img/poap.svg"
-                  width="46px"
-                  height="46px"
-                  alt="Reclama tu poap"
-                ></img>
-                Recibir POAP
-              </a>
-            </Link>
+            
 
             <nav className="menu-burguer">
               <input type="checkbox" id="drop" />

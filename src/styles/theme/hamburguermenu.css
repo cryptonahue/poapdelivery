@@ -11,15 +11,16 @@
 }
 
 .header-main-burger {
-  background-color: #0c0e1a;
+  background-color: #2F2A47;
   height: 100%;
+  width: 100vw;
 }
 
 .header-burger {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  background-color: #0c0e1a;
+  
   align-items: flex-end;
 }
 
