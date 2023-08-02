@@ -231,70 +231,25 @@ const NavBar = () => {
 
               <ul>
                 <li>
-                  <label for="drop-1" className="toggle">
-                    Academia
-                  </label>
-                  <a href="#">Academia</a>
-                  <input type="checkbox" id="drop-1" />
-                  <ul>
-                    <li>
-                      <Link href="/articulos">
-                        <a>Artículos</a>
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link href="/tutoriales">
-                        <a>Tutoriales</a>
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link href="/herramientas">
-                        <a>Herramientas</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/definiciones">
-                        <a>DeFiniciones</a>
-                      </Link>
-                    </li>
-                  </ul>
+                  
+                  <a href="/claim-poap">Claim POAP</a>
+                  
+                
                 </li>
                 <li>
-                  <label for="drop-2" className="toggle">
-                    Proyectos
-                  </label>
-                  <Link href="/proyectos">
-                    <a>Proyectos</a>
+                
+                  <Link href="/delivery-poap">
+                    <a>Delivery POAP</a>
                   </Link>
-                  <input type="checkbox" id="drop-2" />
-                  <ul>
-                    <li>
-                      <Link href="/proyectos">
-                        <a>Proyectos</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/rekts">
-                        <a>Rekts</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/opiniones">
-                        <a>Opiniones</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/noticias">
-                        <a>Noticias</a>
-                      </Link>
-                    </li>
-                  </ul>
                 </li>
                 <li>
-                  <Link href="/gobernanzas">
-                    <a>Gobernanzas</a>
+                  <Link href="/faq">
+                    <a>FAQ</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/donate">
+                    <a>Donate</a>
                   </Link>
                 </li>
               </ul>
@@ -303,7 +258,7 @@ const NavBar = () => {
           <div style={{ padding: "10px" }}>
             {user && (
               <>
-                <ButtonBase
+              {/*   <ButtonBase
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   className="Profile__container"
@@ -322,12 +277,12 @@ const NavBar = () => {
                     <div className="UserName">{user.displayName}</div>
                     <div className="UserEmail">{user.email}</div>
                   </div>
-                </ButtonBase>
+                </ButtonBase> */}
               </>
             )}
             {user === null && (
               <>
-                <Button
+               {/*  <Button
                   className="boton-comenzar-curso"
                   aria-controls="simple-menu"
                   aria-haspopup="true"
@@ -345,7 +300,7 @@ const NavBar = () => {
                   fullWidth
                 >
                   Registrarse
-                </Button>
+                </Button> */}
               </>
             )}
           </div>

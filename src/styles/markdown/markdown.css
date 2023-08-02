@@ -186,13 +186,13 @@ p,span{
 
 
 
-.Markdown_container1 ul,
+/* .Markdown_container1 ul,
 li,
 ol,
 dd {
   margin-left: 1em !important;
   padding-left: 1.5em;
-}
+} */
 
 linkrelationated a{
   color: #0c0e1a !important;

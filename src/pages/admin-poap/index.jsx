@@ -1,7 +1,16 @@
+// Importa el módulo completo de react-hook-form usando la importación por defecto
+import { default as ReactHookForm } from "react-hook-form";
+
+// Luego, accede a los exports necesarios desde el módulo
+const { useForm } = ReactHookForm;
+const { yupResolver } = ReactHookForm.resolvers;
+
+
 import { API_URL } from "../../constants/env";
 import { useEffect, useState, useContext, useCallback, useRef } from "react";
-import { useForm } from "react-hook-form";
+/* import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+ */
 import { config, defaultValues } from "../../config/poap";
 import { useDropzone } from "react-dropzone";
 import Page from "@/components/Page";
