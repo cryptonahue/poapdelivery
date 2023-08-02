@@ -9,7 +9,6 @@ import { Titles } from "@/components/Card";
 import Button from "@mui/material/Button";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { config, defaultValues } from "../config/cursos/config";
 import orderArrayByDate from "@/utils/orderByDate";
 import Head from "next/head";
 
