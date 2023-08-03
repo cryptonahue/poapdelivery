@@ -19,32 +19,6 @@ import Container from "@mui/material/Container";
 import styles from "@/styles/components/Nav.module.css";
 import useStyles from "./styles";
 
-const list = [
-  {
-    text: "Inicio",
-    to: "/",
-  },
-  {
-    text: "Tutoriales",
-    to: "/tutoriales",
-  },
-  {
-    text: "Blog",
-    to: "/blog",
-  },
-  {
-    text: "Noticias",
-    to: "/noticias",
-  },
-  {
-    text: "Proyectos",
-    to: "/proyectos",
-  },
-  {
-    text: "Poap",
-    to: "/poap",
-  },
-];
 
 const NavBar = () => {
   const { handleModal } = useModal();
@@ -80,12 +54,15 @@ const NavBar = () => {
               <div className="fn_logo">
                 <Link href="/">
                   <a>
-                    <div><img
+                    <div>
+                      <img
                         src="/img/logo.svg"
                         alt=""
                         width="40px"
                         height="auto"
-                      ></img></div><div> POAPDelivery.xyz</div>
+                      ></img>
+                    </div>
+                    <div> POAPDelivery.xyz</div>
                   </a>
                 </Link>
               </div>
@@ -163,19 +140,22 @@ const NavBar = () => {
             <div className="logo">
               <Link href="/">
                 <a>
-                <div><img
-                        src="/img/logo.svg"
-                        alt=""
-                        width="40px"
-                        height="auto"
-                      ></img></div><div> POAPDelivery.xyz</div>
+                  <div>
+                    <img
+                      src="/img/logo.svg"
+                      alt=""
+                      width="40px"
+                      height="auto"
+                    ></img>
+                  </div>
+                  <div> POAPDelivery.xyz</div>
                 </a>
               </Link>
             </div>
             <div className="trigger">
               <div className="hamburger hamburger--slider">
                 <div className="">
-                  <div>
+                  <div className="">
                     <IconButton
                       onClick={() => setOpen(true)}
                       edge="start"
@@ -184,8 +164,8 @@ const NavBar = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="36"
-                        height="36"
+                        width="24"
+                        height="24"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -210,9 +190,7 @@ const NavBar = () => {
         <div className="header-main-burger">
           <div>
             <div className="header-burger">
-              <div>
-                
-              </div>
+              <div></div>
 
               <div>
                 <IconButton
@@ -224,41 +202,30 @@ const NavBar = () => {
                 </IconButton>
               </div>
             </div>
-            
 
             <nav className="menu-burguer">
               <input type="checkbox" id="drop" />
 
               <ul>
                 <li>
-                  
-                  <a href="/claim-poap">Claim POAP</a>
-                  
-                
+                  <Link href="/">Claim POAP</Link>
                 </li>
                 <li>
-                
-                  <Link href="/delivery-poap">
-                    <a>Delivery POAP</a>
-                  </Link>
+                  <Link href="/delivery-poap">Delivery POAP</Link>
                 </li>
                 <li>
-                  <Link href="/faq">
-                    <a>FAQ</a>
-                  </Link>
+                  <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
-                  <Link href="/donate">
-                    <a>Donate</a>
-                  </Link>
+                  <Link href="/donate">Donate</Link>
                 </li>
               </ul>
             </nav>
           </div>
-          <div style={{ padding: "10px" }}>
+          <div style={{ padding: "0px" }}>
             {user && (
               <>
-              {/*   <ButtonBase
+                {/*   <ButtonBase
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   className="Profile__container"
@@ -282,7 +249,7 @@ const NavBar = () => {
             )}
             {user === null && (
               <>
-               {/*  <Button
+                {/*  <Button
                   className="boton-comenzar-curso"
                   aria-controls="simple-menu"
                   aria-haspopup="true"

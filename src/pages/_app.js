@@ -1,4 +1,4 @@
-// import "tailwindcss/tailwind.css";
+
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
@@ -32,16 +32,6 @@ export default function MyApp(props) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
-
-{/*<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QDKPYK5CJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9QDKPYK5CJ');
-</script>*/}
 
   return (
     <AuthProvider>

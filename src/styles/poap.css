@@ -80,8 +80,8 @@
 
 .poap-titulo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  font-size: 24px;
 }
 .input-coment input {
   background-color: #161c27;
