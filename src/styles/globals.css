@@ -250,6 +250,7 @@ a {
   border-radius: 0.4vw;
   border: none;
   outline: none;
+  width: 100%;
   border-radius: 20px;
   transition: .4s;
   padding: 10px;
@@ -263,7 +264,7 @@ a {
   box-shadow: 0 0 0 2px #EAC9F8;
 }
 
-.button {
+.button_claim {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,30 +275,31 @@ a {
   outline-offset: -3px;
   border-radius: 20px;
   border: none;
+  width: 100%;
   cursor: pointer;
   transition: 400ms;
 }
 
-.button .text {
+.button_claim .text {
   color: white;
   font-weight: 700;
   font-size: 1em;
   transition: 400ms;
 }
 
-.button svg path {
+.button_claim svg path {
   transition: 400ms;
 }
 
-.button:hover {
+.button_claim:hover {
   outline: 2px #EAC9F8 solid;
   background-color: transparent;
 }
 
-.button:hover .text {
+.button_claim:hover .text {
   color: #FFF;
 }
 
-.button:hover svg path {
+.button_claim:hover svg path {
   fill: #EAC9F8;
 }

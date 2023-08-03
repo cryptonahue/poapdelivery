@@ -225,7 +225,7 @@ const Footer = () => {
         </div> */}
         <div className="Footer__about" id="comunidad">
           <center>
-            <p>Realizado con ♡ para la comunidad.</p>
+            <p>Support Us</p>
           </center>
         </div>
       </div>

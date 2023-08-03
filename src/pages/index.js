@@ -122,12 +122,14 @@ const Poap = ({ communities }) => {
         <div className="Container-poap">
             <div className="poap-titulo">Claim POAP</div>
             <Spacing space="20" />
-          <div className="poap">
+          
          
+            
+            <form onSubmit={handleSubmit(onSubmit)}>
             <Spacing space="10" />
             <div>Insert secret key word</div>
             <Spacing space="10" />
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="poap">
               <input
                 type="text"
                 name="keyword"
@@ -135,17 +137,7 @@ const Poap = ({ communities }) => {
                 {...register("keyword")}
                 class="input"
               ></input>
-              <Spacing space="10" />
-              <button class="button">
-                <p
-                  type="submit"
-                  variant="contained"
-                  className="text"
-                  disabled={isSubmitting && "true"}
-                >
-                  CLAIM
-                </p>
-              </button>
+            
               <Spacing space="20" />
               {isSubmitting && (
                 <>
@@ -158,8 +150,21 @@ const Poap = ({ communities }) => {
                 sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
                 onChange={onChange}
               />
+                
+             </div>
+             <Spacing space="10" />
+             <button class="button_claim">
+                <p
+                  type="submit"
+                  variant="contained"
+                  className="text"
+                  disabled={isSubmitting && "true"}
+                >
+                  CLAIM
+                </p>
+              </button>
             </form>
-          </div>
+          
         </div>
       </Page>
     </>

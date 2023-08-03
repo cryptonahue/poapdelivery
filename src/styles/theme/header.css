@@ -383,7 +383,8 @@ a.full_link{
 	float: left;
 	clear: both;
 	background-color: var(--body-background-color);
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(234, 201, 248, 0.37);
+	
 	padding:  20px 0;
 }
 .anor_fn_mobile_menu .mobile_in{
