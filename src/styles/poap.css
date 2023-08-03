@@ -77,6 +77,16 @@
   background-color: #161c27;
 }
 
+.poap {
+  border-radius: 20px;
+  border: 2px solid #5D58A4;
+  padding: 10px;
+}
+
+.rc-anchor-normal {
+  width: 260px;
+  max-width: 90vw;
+}
 
 .poap-titulo {
   display: flex;
@@ -298,7 +308,6 @@ color:#B89F57;
   color: var(--blue-mid);
   font-size: 21px;
   line-height: 1.6;
- /*  margin: 40px 0 0 0 !important; */
 }
 
 .hidden-lg { display: block; }
@@ -325,9 +334,6 @@ color:#B89F57;
 
   .faq__holder {
       margin: 0 0px;
-      /* padding: 70px 0; */
-      /* max-width: 350px;
-      width: 350px; */
   }
 
   .faq__logo {
@@ -354,15 +360,11 @@ color:#B89F57;
   .visible-lg { 
       display: block; 
       position: absolute;
-  /*     margin-top: 120px; */
       left: -80px;    
   }
 
-
-
   .faq__detail {
     margin: 10px 0 0 0;
-     /*  padding: 0 0 20px 0; */
   }
 }
 

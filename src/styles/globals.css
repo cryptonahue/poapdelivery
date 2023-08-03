@@ -250,9 +250,9 @@ a {
   border-radius: 0.4vw;
   border: none;
   outline: none;
-  padding: 0.4vw;
-  max-width: 190px;
+  border-radius: 20px;
   transition: .4s;
+  padding: 10px;
 }
 
 .input:hover {
@@ -260,7 +260,7 @@ a {
 }
 
 .input:focus {
-  box-shadow: 0 0 0 .15vw skyblue;
+  box-shadow: 0 0 0 2px #EAC9F8;
 }
 
 .button {
@@ -269,10 +269,10 @@ a {
   align-items: center;
   padding: 10px 15px;
   gap: 15px;
-  background-color: #181717;
-  outline: 3px #181717 solid;
+  background-color: #968CFF;
+  outline: 2px #968CFF solid;
   outline-offset: -3px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
   transition: 400ms;
@@ -290,13 +290,14 @@ a {
 }
 
 .button:hover {
+  outline: 2px #EAC9F8 solid;
   background-color: transparent;
 }
 
 .button:hover .text {
-  color: #181717;
+  color: #FFF;
 }
 
 .button:hover svg path {
-  fill: #181717;
+  fill: #EAC9F8;
 }

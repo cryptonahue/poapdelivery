@@ -56,8 +56,6 @@ const Poap = ({ communities }) => {
     });
   };
 
-  
-
   useEffect(() => {
     const getIP = async () => {
       try {
@@ -93,12 +91,12 @@ const Poap = ({ communities }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="POAP Delivery" />
         <meta property="og:site_name" content="POAP Delivery" />
-        <meta property="og:description" content="Administer & Claim POAP NFTs | Proof of Attendance" />
-        <meta property="og:type" content="article" />
         <meta
-          property="og:image"
-          content="/img/thumbnail.png"
+          property="og:description"
+          content="Administer & Claim POAP NFTs | Proof of Attendance"
         />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/img/thumbnail.png" />
         <meta property="og:image:width" content="100" />
         <meta property="og:image:height" content="100" />
 
@@ -107,79 +105,61 @@ const Poap = ({ communities }) => {
           name="telegram:description"
           content="Administer & Claim POAP NFTs | Proof of Attendance"
         />
-        <meta
-          name="telegram:image"
-          content="/img/thumbnail.png"
-        />
+        <meta name="telegram:image" content="/img/thumbnail.png" />
         <meta property="telegram:image:height" content="100" />
         <meta property="telegram:image:width" content="100" />
 
         <meta name="twitter:title" content="POAP Delivery" />
-        <meta name="twitter:description" content="Administer & Claim POAP NFTs | Proof of Attendance" />
         <meta
-          name="twitter:image"
-          content="/img/thumbnail.png"
+          name="twitter:description"
+          content="Administer & Claim POAP NFTs | Proof of Attendance"
         />
+        <meta name="twitter:image" content="/img/thumbnail.png" />
         <meta property="twitter:image:height" content="100" />
         <meta property="twitter:image:width" content="100" />
       </Head>
       <Page title="POAP Delivery">
         <div className="Container-poap">
-         
+            <div className="poap-titulo">Claim POAP</div>
+            <Spacing space="20" />
           <div className="poap">
-            <Spacing space="10" />
-            <div className="poap-titulo">
-              Claim POAP
-            </div>
-            <Spacing space="10" />
-       <div>
-       Insert secret key word
-       </div>
-            
-           
-        
-           
-
-              <form onSubmit={handleSubmit(onSubmit)}>
-             
-              <input type="text" 
-                      name="keyword"
-                      placeholder="Enter the secret word"
-                      {...register("keyword")} class="input"></input>
-        
-
-                  <button class="button">
-  <p type="submit"
-                    variant="contained"
-                    className="text"
-                    disabled={isSubmitting && "true"}>CLAIM</p>
-</button>
-                
-
-              
-                
-                {isSubmitting && (
-                  <>
-                    <LinearProgress color="secondary" />
-                   
-                  </>
-                )}
-                
-                  <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
-                    onChange={onChange}
-                  />
-               
-              </form>
-            
-          
-          </div>
-       
          
-
-
-          
+            <Spacing space="10" />
+            <div>Insert secret key word</div>
+            <Spacing space="10" />
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <input
+                type="text"
+                name="keyword"
+                placeholder="Enter the secret word"
+                {...register("keyword")}
+                class="input"
+              ></input>
+              <Spacing space="10" />
+              <button class="button">
+                <p
+                  type="submit"
+                  variant="contained"
+                  className="text"
+                  disabled={isSubmitting && "true"}
+                >
+                  CLAIM
+                </p>
+              </button>
+              <Spacing space="20" />
+              {isSubmitting && (
+                <>
+                  <LinearProgress color="secondary" />
+                </>
+              )}
+              <Spacing space="10" />
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
+                onChange={onChange}
+              />
+            </form>
+          </div>
         </div>
       </Page>
     </>
