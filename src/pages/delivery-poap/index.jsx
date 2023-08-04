@@ -204,6 +204,37 @@ const CreatePoap = () => {
           </TableBody>
         </Table>
       </TableContainer>
+
+    <div>
+    {state.length > 0 ? (
+              state.map((row) => (
+                <div
+                  key={row.id}
+                  sx={{
+                    "&:last-child td, &:last-child th": {
+                      border: 0,
+                    },
+                  }}
+                >
+                  <div component="th" scope="row">
+                    {row.author}
+                  </div>
+                  <div align="right">
+                    {validateDate(
+                      row.createdAt ? row.createdAt : row.created_at
+                    )}
+                  </div>
+                  <div align="right">{row.poaps_created}</div>
+                  <div align="right">
+                    {row.linkpoaps ? row.linkpoaps.length : "Todos"}
+                  </div>
+                  <div align="right">{row.keyword}</div>
+                </div>
+              ))
+            ) : (
+              <div align="right">No hay POAPS creados</div>
+            )}
+      </div>
       </div>
     </Page>
   );

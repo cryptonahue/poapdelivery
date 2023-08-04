@@ -61,7 +61,7 @@ const Poap = ({ communities }) => {
   useEffect(() => {
     const getIP = async () => {
       try {
-        const res = await axios.get("https://backend.defilatam.com/test.php");
+        const res = await axios.get("https://morenabeltran.com/test.php");
         const verifyIp = res.data && res.data[0];
         setIP(verifyIp);
       } catch (error) {

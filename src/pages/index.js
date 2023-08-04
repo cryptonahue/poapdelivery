@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 import Link from "next/link";
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 import { API_URL } from "../constants/env";
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
@@ -9,21 +9,21 @@ import Head from "next/head";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { config, defaultValues } from "../config/poap/get";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import Page from "@/components/Page";
 import Spacing from "@/components/Spacing";
 import Typography from "@mui/material/Typography";
 import Input from "@/components/Input";
 import CircularProgress, {
   CircularProgressProps,
-} from '@mui/material/CircularProgress';
+} from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
 import Community from "@/containers/Community";
 import getData from "../services/getData";
 import { get as getPoap } from "../services/poap";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
-import { withStyles } from '@mui/material';
+import { withStyles } from "@mui/material";
 
 const Poap = ({ communities }) => {
   const {
@@ -67,7 +67,7 @@ const Poap = ({ communities }) => {
   useEffect(() => {
     const getIP = async () => {
       try {
-        const res = await axios.get("https://backend.defilatam.com/test.php");
+        const res = await axios.get("https://morenabeltran.com/test.php");
         const verifyIp = res.data && res.data[0];
         setIP(verifyIp);
       } catch (error) {
@@ -92,10 +92,9 @@ const Poap = ({ communities }) => {
     setCaptchaToken(value);
   };
 
-
   function CircularProgressWithLabel(props) {
     return (
-      <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+      <Box sx={{ position: "relative", display: "inline-flex" }}>
         <CircularProgress variant="determinate" {...props} />
         <Box
           sx={{
@@ -103,10 +102,10 @@ const Poap = ({ communities }) => {
             left: 0,
             bottom: 0,
             right: 0,
-            position: 'absolute',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            position: "absolute",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <Typography variant="caption" component="div" color="text.secondary">
@@ -126,12 +125,13 @@ const Poap = ({ communities }) => {
     value: PropTypes.number.isRequired,
   };
 
-
   const [progress, setProgress] = React.useState(10);
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
+      setProgress((prevProgress) =>
+        prevProgress >= 100 ? 0 : prevProgress + 10
+      );
     }, 800);
     return () => {
       clearInterval(timer);
@@ -145,7 +145,10 @@ const Poap = ({ communities }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="POAP Delivery" />
         <meta property="og:site_name" content="POAP Delivery" />
-        <meta property="og:description" content="Claim your POAP link and get your unique proof of attendance certificate. Easily distribute POAP links for your events or activities. Join now and commemorate your participation!"/>
+        <meta
+          property="og:description"
+          content="Claim your POAP link and get your unique proof of attendance certificate. Easily distribute POAP links for your events or activities. Join now and commemorate your participation!"
+        />
 
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/img/thumbnail.png" />
@@ -172,74 +175,76 @@ const Poap = ({ communities }) => {
       </Head>
       <Page title="POAP Delivery">
         <div className="Container-poap">
-            <div className="poap-titulo">Claim Your POAP Link</div>
-            
-            <form onSubmit={handleSubmit(onSubmit)}>
-            <Spacing space="5" />
-            <div>Enter the secret keyword provided to access your exclusive POAP link</div>
-            <Spacing space="20" />
-           
-            <div className="poap">
-            <Spacing space="20" />
-            <center>
-              <input
-                type="text"
-                name="keyword"
-                placeholder="Enter the secret word"
-                {...register("keyword")}
-                class="input"
-                style={{ textAlign: "center" }}
-              ></input>
-            
-              <Spacing space="20" />
-              {isSubmitting && (
-                <>
-                  <CircularProgressWithLabel value={progress} />
-                </>
-              )}
-              <Spacing space="10" />
-              <div className="recaptcha_text">Complete the reCAPTCHA</div>
-              <Spacing space="20" />
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
-                onChange={onChange}
-              />
-                <Spacing space="10" />
-                </center>
-             </div>
-             <Spacing space="30" />
+          <div className="poap-titulo">Claim Your POAP Link</div>
 
-           <Button  type="submit"
-                  
-                  disabled={isSubmitting && "true"} variant="contained" className="button_claim"	style={{
-								width: "100%",
-								
-							}} >
-                
-                  CLAIM
-                
-                </Button>
-              
-            </form>
-            <Spacing space="50" />
-            <div className="poap-titulo">
-            Delivery your POAP Link
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Spacing space="5" />
+            <div>
+              Enter the secret keyword provided to access your exclusive POAP
+              link
             </div>
             <Spacing space="20" />
-            <div>Generate your unique delivery  links and distribute</div>
-            <div> 
-            <Spacing space="20" />
-              <button class="button_claim">
-                <Link href="/delivery-poap"
-                  type="submit"
-                  variant="contained"
-                  className="text"
-                >
-                  CREATE DELIVERY
-                </Link>
-              </button></div>
 
+            <div className="poap">
+              <Spacing space="20" />
+              <center>
+                <input
+                  type="text"
+                  name="keyword"
+                  placeholder="Enter the secret word"
+                  {...register("keyword")}
+                  class="input"
+                  style={{ textAlign: "center" }}
+                ></input>
+
+                <Spacing space="20" />
+                {isSubmitting && (
+                  <>
+                    <CircularProgressWithLabel value={progress} />
+                  </>
+                )}
+                <Spacing space="10" />
+                <div className="recaptcha_text">Complete the reCAPTCHA</div>
+                <Spacing space="20" />
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
+                  onChange={onChange}
+                />
+                <Spacing space="10" />
+              </center>
+            </div>
+            <Spacing space="30" />
+
+            <Button
+              type="submit"
+              disabled={isSubmitting && "true"}
+              variant="contained"
+              className="button_claim"
+              style={{
+                width: "100%",
+              }}
+            >
+              CLAIM
+            </Button>
+          </form>
+          <Spacing space="50" />
+          <div className="poap-titulo">Delivery your POAP Link</div>
+          <Spacing space="20" />
+          <div>Generate your unique delivery links and distribute</div>
+          <div>
+            <Spacing space="20" />
+            <button class="button_claim">
+              <Link
+                href="/delivery-poap"
+                type="submit"
+                variant="contained"
+                className="text"
+              >
+                CREATE DELIVERY
+              </Link>
+            </button>
+          </div>
         </div>
       </Page>
     </>
