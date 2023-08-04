@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from "next/link";
 import Box from '@mui/material/Box';
 import { API_URL } from "../constants/env";
 import axios from "axios";
@@ -208,7 +209,7 @@ const Poap = ({ communities }) => {
                 </center>
              </div>
              <Spacing space="30" />
-                  
+
            <Button  type="submit"
                   
                   disabled={isSubmitting && "true"} variant="contained" className="button_claim"	style={{
@@ -230,13 +231,13 @@ const Poap = ({ communities }) => {
             <div> 
             <Spacing space="20" />
               <button class="button_claim">
-                <p
+                <Link href="/delivery-poap"
                   type="submit"
                   variant="contained"
                   className="text"
                 >
                   CREATE DELIVERY
-                </p>
+                </Link>
               </button></div>
 
         </div>

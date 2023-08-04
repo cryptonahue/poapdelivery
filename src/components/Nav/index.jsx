@@ -19,6 +19,7 @@ import Container from "@mui/material/Container";
 import styles from "@/styles/components/Nav.module.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from "./styles";
+import LoginIcon from '@mui/icons-material/Login';
 
 
 const NavBar = () => {
@@ -150,7 +151,9 @@ const NavBar = () => {
                         onClick={() => handleModal("signin", true)}
                         color="inherit"
                       >
-                        <AccountCircleIcon fontSize="large" />
+                       
+                        <LoginIcon />
+                       {/*  <AccountCircleIcon fontSize="large" /> */}
                       </Button>
                     </div>
                   </>

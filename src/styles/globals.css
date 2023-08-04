@@ -374,3 +374,9 @@ a {
 .text_navbar {
   font-size: 14px;
 }
+
+.text_navbar:hover {
+  font-size: 14px;
+  color: #EAC9F8;
+  transition: 400ms;
+}
