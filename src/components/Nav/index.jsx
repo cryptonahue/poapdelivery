@@ -70,19 +70,24 @@ const NavBar = () => {
             </div>
 
             <div className="header_right">
-              <div className="fn_search_top">
+           {/*    <div className="fn_search_top">
                 <input type="text" name="s" placeholder="Buscar" />
                 <input type="submit" value="" />
                 <img src="/svg/search.svg" alt="" className="fn__svg"></img>
-              </div>
-              <Link href="/delivery-poap" >
-
-                <Button  className="button_navbar">
-                <a className="text">
-              
-                  CREATE DELIVERY
+              </div> */}
+              <Link href="/" >
+                
+                <a className="text_navbar">
+                  CLAIM
                   </a>
-                  </Button>
+                  
+              </Link>
+              <Link href="/delivery-poap" >
+               
+                <a className="text_navbar">
+                  DELIVERY
+                  </a>
+                  
               </Link>
 
            {/*    <button class="button_claim">
@@ -105,6 +110,7 @@ const NavBar = () => {
                       className="Profile__container"
                       onClick={handleClick}
                     >
+                      
                       <span>
                         <Avatar
                           sx={{ width: 40, height: 40 }}

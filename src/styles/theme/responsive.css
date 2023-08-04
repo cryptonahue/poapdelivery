@@ -10,7 +10,7 @@
 }
 @media(max-width: 1250px){
 	.anor_fn_header .header_left,
-	.anor_fn_header .fn_logo{margin-right: 40px;}
+	/* .anor_fn_header .fn_logo{margin-right: 40px;} */
 	.anor_fn_slider_title .fn_title, .anor_fn_discover .disc_desc h3{
 		font-size: 30px;
 	}

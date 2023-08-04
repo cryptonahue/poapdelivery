@@ -275,7 +275,7 @@ a {
   outline-offset: -3px;
   border-radius: 20px;
   border: none;
-  width: 100%;
+  width: 100% !important;
   cursor: pointer;
   transition: 400ms;
 }
@@ -303,6 +303,10 @@ a {
 .button_claim:hover svg path {
   fill: #EAC9F8;
 }
+
+
+
+
 
 
 .recaptcha_text {
@@ -364,4 +368,9 @@ a {
 
 .button_navbar:hover svg path {
   fill: #EAC9F8;
+}
+
+
+.text_navbar {
+  font-size: 14px;
 }

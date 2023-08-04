@@ -22,6 +22,7 @@ import getData from "../services/getData";
 import { get as getPoap } from "../services/poap";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
+import { withStyles } from '@mui/material';
 
 const Poap = ({ communities }) => {
   const {
@@ -171,12 +172,11 @@ const Poap = ({ communities }) => {
       <Page title="POAP Delivery">
         <div className="Container-poap">
             <div className="poap-titulo">Claim Your POAP Link</div>
-            <Spacing space="10" />
             
             <form onSubmit={handleSubmit(onSubmit)}>
-            <Spacing space="10" />
+            <Spacing space="5" />
             <div>Enter the secret keyword provided to access your exclusive POAP link</div>
-            <Spacing space="10" />
+            <Spacing space="20" />
            
             <div className="poap">
             <Spacing space="20" />
@@ -207,17 +207,19 @@ const Poap = ({ communities }) => {
                 <Spacing space="10" />
                 </center>
              </div>
-             <Spacing space="10" />
-             <button class="button_claim">
-                <p
-                  type="submit"
-                  variant="contained"
-                  className="text"
-                  disabled={isSubmitting && "true"}
-                >
+             <Spacing space="30" />
+                  
+           <Button  type="submit"
+                  
+                  disabled={isSubmitting && "true"} variant="contained" className="button_claim"	style={{
+								width: "100%",
+								
+							}} >
+                
                   CLAIM
-                </p>
-              </button>
+                
+                </Button>
+              
             </form>
             <Spacing space="50" />
             <div className="poap-titulo">
