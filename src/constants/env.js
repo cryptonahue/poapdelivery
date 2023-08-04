@@ -5,6 +5,6 @@ const API_URL = isDev
   : "https://backend-defilatam-production.up.railway.app";
 
 
-const APP_URL = isDev ? "http://localhost:3000" : "https://defilatam.com";
+const APP_URL = isDev ? "http://localhost:3000" : "https://poapdelivery.xyz";
 
 export { API_URL, APP_URL };

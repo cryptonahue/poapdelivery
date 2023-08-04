@@ -1,6 +1,6 @@
 const USER_DEFAULT = {
-	name: "DeFi LATAM",
-	email: "admin@defilatam.com",
+	name: "POAP Delivery",
+	email: "support@poapdelivery.xyz",
 };
 
 export default USER_DEFAULT;
