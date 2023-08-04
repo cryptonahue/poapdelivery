@@ -303,3 +303,24 @@ a {
 .button_claim:hover svg path {
   fill: #EAC9F8;
 }
+
+
+.recaptcha_text {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rc-anchor-light .rc-anchor-logo-text, .rc-anchor-light div a:link, .rc-anchor-light div a:visited {
+  color: #fff;
+}
+
+.rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
+  border: 1px solid #968cff !important;
+  border-radius: 20px;
+}
+
+.rc-anchor-light {
+  background: #968cff !important;
+  color: #FFF;
+}

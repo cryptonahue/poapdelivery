@@ -87,14 +87,12 @@ const Poap = ({ communities }) => {
   return (
     <>
       <Head>
-        <title>POAP Delivery</title>
+        <title>Get Your POAP Link | Proof of Attendance Certificates</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="POAP Delivery" />
         <meta property="og:site_name" content="POAP Delivery" />
-        <meta
-          property="og:description"
-          content="Administer & Claim POAP NFTs | Proof of Attendance"
-        />
+        <meta property="og:description" content="Claim your POAP link and get your unique proof of attendance certificate. Easily distribute POAP links for your events or activities. Join now and commemorate your participation!"/>
+
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/img/thumbnail.png" />
         <meta property="og:image:width" content="100" />
@@ -120,22 +118,26 @@ const Poap = ({ communities }) => {
       </Head>
       <Page title="POAP Delivery">
         <div className="Container-poap">
-            <div className="poap-titulo">Claim POAP</div>
+            <div className="poap-titulo">Claim Your POAP Link</div>
             <Spacing space="20" />
           
          
             
             <form onSubmit={handleSubmit(onSubmit)}>
             <Spacing space="10" />
-            <div>Insert secret key word</div>
+            <div>Enter the secret keyword provided to access your exclusive POAP link</div>
             <Spacing space="10" />
+           
             <div className="poap">
+            <Spacing space="20" />
+            <center>
               <input
                 type="text"
                 name="keyword"
                 placeholder="Enter the secret word"
                 {...register("keyword")}
                 class="input"
+                style={{ textAlign: "center" }}
               ></input>
             
               <Spacing space="20" />
@@ -145,12 +147,15 @@ const Poap = ({ communities }) => {
                 </>
               )}
               <Spacing space="10" />
+              <div className="recaptcha_text">Complete the reCAPTCHA</div>
+              <Spacing space="20" />
               <ReCAPTCHA
                 ref={recaptchaRef}
                 sitekey="6Lf5xGImAAAAAM5BPbd3aRsFzCUQDMFQ9QTcT_nE"
                 onChange={onChange}
               />
-                
+                <Spacing space="10" />
+                </center>
              </div>
              <Spacing space="10" />
              <button class="button_claim">
