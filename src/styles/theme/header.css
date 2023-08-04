@@ -66,6 +66,16 @@ a.full_link{
 	cursor: pointer;
 }
 
+
+.css-1oqqzyl-MuiContainer-root {
+	max-width: 1200px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
 .anor_fn_header{
 	/* border-bottom: 1px solid #bbb; */
 	padding: 15px 0;
@@ -87,6 +97,7 @@ a.full_link{
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	width: 620px;
 }
 .anor_fn_header .header_left{
 	display: -webkit-flex;

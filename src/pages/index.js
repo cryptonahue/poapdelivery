@@ -119,7 +119,7 @@ const Poap = ({ communities }) => {
       <Page title="POAP Delivery">
         <div className="Container-poap">
             <div className="poap-titulo">Claim Your POAP Link</div>
-            <Spacing space="20" />
+            <Spacing space="10" />
           
          
             
@@ -169,7 +169,24 @@ const Poap = ({ communities }) => {
                 </p>
               </button>
             </form>
-          
+            <Spacing space="50" />
+            <div className="poap-titulo">
+            Delivery your POAP Link
+            </div>
+            <Spacing space="20" />
+            <div>Generate your unique delivery  links and distribute</div>
+            <div> 
+            <Spacing space="20" />
+              <button class="button_claim">
+                <p
+                  type="submit"
+                  variant="contained"
+                  className="text"
+                >
+                  CREATE DELIVERY
+                </p>
+              </button></div>
+
         </div>
       </Page>
     </>
