@@ -23,6 +23,7 @@ import getData from "../../services/getData";
 import validateDate from "@/utils/validateDate";
 import ReCAPTCHA from "react-google-recaptcha";
 
+
 const CreatePoap = () => {
   const {
     initialState: { user },
@@ -30,7 +31,7 @@ const CreatePoap = () => {
 
   const {
     register,
-    handleSubmit,
+    handleSubmit,handleClick,
     formState: { isSubmitting },
     watch,
     setValue,
@@ -124,7 +125,8 @@ const CreatePoap = () => {
           <>
             <Spacing space="18" />
             <div className="ini">
-            <Alert severity="warning">Inicia sesión para crear POAP</Alert>
+            <Alert severity="warning" onClick={handleClick}>Inicia sesión para crear POAP</Alert>
+            
             </div>
           </>
         )}

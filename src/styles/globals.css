@@ -324,3 +324,44 @@ a {
   background: #968cff !important;
   color: #FFF;
 }
+
+
+.button_navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #968CFF;
+  outline: 2px #968CFF solid;
+  outline-offset: -3px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button_navbar .text {
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+  transition: 400ms;
+}
+
+.button_navbar svg path {
+  transition: 400ms;
+}
+
+.button_navbar:hover {
+  outline: 2px #EAC9F8 solid;
+  background-color: transparent;
+}
+
+.button_navbar:hover .text {
+  color: #FFF;
+}
+
+.button_navbar:hover svg path {
+  fill: #EAC9F8;
+}

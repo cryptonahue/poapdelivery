@@ -17,6 +17,7 @@ import Avatar from "@mui/material/Avatar";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Container from "@mui/material/Container";
 import styles from "@/styles/components/Nav.module.css";
+import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from "./styles";
 
 
@@ -74,6 +75,26 @@ const NavBar = () => {
                 <input type="submit" value="" />
                 <img src="/svg/search.svg" alt="" className="fn__svg"></img>
               </div>
+              <Link href="/delivery-poap" >
+
+                <Button  className="button_navbar">
+                <a className="text">
+              
+                  CREATE DELIVERY
+                  </a>
+                  </Button>
+              </Link>
+
+           {/*    <button class="button_claim">
+                <p
+                  type="submit"
+                  variant="contained"
+                  
+                  disabled={isSubmitting && "true"}
+                >
+                  CLAIM
+                </p>
+              </button> */}
 
               <div className="fn_signin">
                 {user ? (
@@ -128,7 +149,7 @@ const NavBar = () => {
                     </div>
                   </>
                 )}
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -162,7 +183,7 @@ const NavBar = () => {
                       color="white"
                       aria-label="menu"
                     >
-                      <svg
+                     {/*  <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -176,7 +197,10 @@ const NavBar = () => {
                           strokeWidth="2"
                           d="M4 6h16M4 12h16m-7 6h7"
                         />
-                      </svg>
+                      </svg> */}
+                      <MenuIcon/>
+
+
                     </IconButton>
                   </div>
                 </div>

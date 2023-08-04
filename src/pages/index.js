@@ -1,3 +1,5 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
 import { API_URL } from "../constants/env";
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
@@ -5,11 +7,15 @@ import { useForm } from "react-hook-form";
 import Head from "next/head";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { config, defaultValues } from "../config/poap/get";
+
+import PropTypes from 'prop-types';
 import Page from "@/components/Page";
 import Spacing from "@/components/Spacing";
 import Typography from "@mui/material/Typography";
 import Input from "@/components/Input";
-import LinearProgress from "@mui/material/LinearProgress";
+import CircularProgress, {
+  CircularProgressProps,
+} from '@mui/material/CircularProgress';
 import Button from "@mui/material/Button";
 import Community from "@/containers/Community";
 import getData from "../services/getData";
@@ -84,6 +90,52 @@ const Poap = ({ communities }) => {
     setCaptchaToken(value);
   };
 
+
+  function CircularProgressWithLabel(props) {
+    return (
+      <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant="determinate" {...props} />
+        <Box
+          sx={{
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            position: 'absolute',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Typography variant="caption" component="div" color="text.secondary">
+            {`${Math.round(props.value)}%`}
+          </Typography>
+        </Box>
+      </Box>
+    );
+  }
+
+  CircularProgressWithLabel.propTypes = {
+    /**
+     * The value of the progress indicator for the determinate variant.
+     * Value between 0 and 100.
+     * @default 0
+     */
+    value: PropTypes.number.isRequired,
+  };
+
+
+  const [progress, setProgress] = React.useState(10);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
+    }, 800);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -120,8 +172,6 @@ const Poap = ({ communities }) => {
         <div className="Container-poap">
             <div className="poap-titulo">Claim Your POAP Link</div>
             <Spacing space="10" />
-          
-         
             
             <form onSubmit={handleSubmit(onSubmit)}>
             <Spacing space="10" />
@@ -143,7 +193,7 @@ const Poap = ({ communities }) => {
               <Spacing space="20" />
               {isSubmitting && (
                 <>
-                  <LinearProgress color="secondary" />
+                  <CircularProgressWithLabel value={progress} />
                 </>
               )}
               <Spacing space="10" />

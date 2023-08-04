@@ -83,6 +83,8 @@
   padding: 10px;
 }
 
+.poap:hover{ background-color: rgba(150, 140, 255, 0.05);}
+
 .rc-anchor-normal {
   width: 260px;
   max-width: 90vw;
