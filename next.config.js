@@ -7,7 +7,7 @@ module.exports = {
     ];
   },
   images: {
-    domains: ["localhost", "backend-defilatam-production.up.railway.app"],
+    domains: ["localhost", "links-backend-production.up.railway.app"],
   },
   env: {
     apiKey: "AIzaSyCL6teitiKFbtKlb7NFl-fv_lfKfCn_jd8",
